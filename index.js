@@ -1,9 +1,5 @@
-/**
- * Expose `unique`
- */
-
-module.exports = unique;
-
+;(function() {
+  
 /**
  * Generate unique CSS selector for given DOM element
  *
@@ -91,3 +87,8 @@ function selectors(el) {
 
   return parts;
 }
+
+
+window.uniqueSelector = unique
+
+}());
